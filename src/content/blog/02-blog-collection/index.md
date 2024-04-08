@@ -18,9 +18,8 @@ Working with the `blog` collection:
 
 In the above example, two static pages will be generated, based on the existence of a classic markdown `.md` file or a jsx compatible markdown `.mdx` file. The folder name represents the slug:
 
-- `https://example.com/blog/post-1`
-- `https://example.com/blog/post-2`
-
+-   `https://example.com/blog/post-1`
+-   `https://example.com/blog/post-2`
 
 All content must be preceded by required metadata in the markdown file in `yaml` format, and be enclosed by triple dashes. --- ---
 
@@ -35,12 +34,12 @@ draft: false
 
 Metadata fields
 
-| Field       | Req | Type    | Remarks                                          |
-| :---------- | :-- | :------ | :----------------------------------------------- |
-| title       | Yes | string  | Title of the content. Used in SEO and RSS.       |
-| description | Yes | string  | Description of the content. Used in SEO and RSS. |
-| date        | Yes | string  | Must be a valid date string (able to be parsed). |
-| draft       | No* | boolean | draft: true, content will not be published.      |
+| Field       | Req  | Type    | Remarks                                          |
+| :---------- | :--- | :------ | :----------------------------------------------- |
+| title       | Yes  | string  | Title of the content. Used in SEO and RSS.       |
+| description | Yes  | string  | Description of the content. Used in SEO and RSS. |
+| date        | Yes  | string  | Must be a valid date string (able to be parsed). |
+| draft       | No\* | boolean | draft: true, content will not be published.      |
 
 All that's left to do is write your content under the metadata.
 
